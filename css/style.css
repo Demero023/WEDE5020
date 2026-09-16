@@ -83,3 +83,39 @@ nav a:focus {
   outline: 2px solid #ffffff;
   outline-offset: 2px;
 }
+/* ---------- 5. MAIN CONTENT (Grid) ---------- */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  background-color: aliceblue;
+  padding: 2rem;
+  margin-bottom: 1.8rem;
+  border-radius: 0.8rem;
+  border-left: 6px solid #1e5fa8;
+  box-shadow: 0 4px 10px rgba(30, 95, 168, 0.08);
+}
+
+section h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e5fa8;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.3px;
+}
+
+section h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1e5fa8;
+  margin: 1.2rem 0 0.6rem;
+}
+
+section p {
+  margin-bottom: 0.9rem;
+  color: #34495e;
+  font-size: 1rem;
+}
