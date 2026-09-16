@@ -119,3 +119,40 @@ section p {
   color: #34495e;
   font-size: 1rem;
 }
+/* ---------- 6. IMAGES (Responsive) ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+  margin: 0.8rem 0;
+}
+
+/* Hero images side by side on desktop */
+.hero-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Team / feature images in a grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+/* ---------- 7. LISTS ---------- */
+ul {
+  margin: 0.8rem 0 1rem 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+ul li strong {
+  color: #1e5fa8;
+}
