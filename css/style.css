@@ -20,3 +20,14 @@ body {
   background-color: #f4f9ff;
   padding: 0;
 }
+/* ---------- 3. HEADER ---------- */
+header {
+  background-color: #1e5fa8;
+  color: #ffffff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
