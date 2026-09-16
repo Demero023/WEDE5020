@@ -28,6 +28,8 @@ Masakaneng Soup Kitchen is a community-based organisation that provides meals to
 - Enquiry/volunteer form
 - Google Map integration
 - Gallery of community work
+- External CSS stylesheet (Part 2)
+- Responsive design for desktop and mobile (Part 2)
 
 ---
 
@@ -51,6 +53,19 @@ Masakaneng Soup Kitchen is a community-based organisation that provides meals to
 
 ---
 
+## Part 2 Details
+
+- External CSS stylesheet (`css/style.css`) created and linked to all pages
+- Applied typography styles (font-family, font-size, font-weight, line-height, letter-spacing)
+- Used Flexbox and CSS Grid for layout structure
+- Applied visual styles (colour, background, border, box-shadow)
+- Used pseudo-classes (`:hover`, `:focus`, `:active`) for interactive elements
+- Used relative units (`rem`, `%`) for responsiveness
+- Implemented responsive design with media queries for tablet (768px) and mobile (480px)
+- Made all images responsive using `max-width: 100%` and `height: auto`
+
+---
+
 ## Sitemap
 
 ![Sitemap](images/sitemap.png)
@@ -59,12 +74,18 @@ Masakaneng Soup Kitchen is a community-based organisation that provides meals to
 
 ## Changelog
 
-- 12/08/2026: Initial README created. HTML structure added.
+- **12/08/2026:** Initial README created. HTML structure added.
+- **16/09/2026:** Added external CSS stylesheet (`style.css`) with base styles, typography, Flexbox, CSS Grid, pseudo-classes and visual styles.
+- **16/09/2026:** Implemented responsive design with media queries for tablet and mobile.
+- **16/09/2026:** Made images responsive across all pages.
+- **16/09/2026:** Updated README with Part 2 details and changelog entries.
 
 ---
 
 ## References
 
-Masakaneng Soup Kitchen, 2026. _Masakaneng Soup Kitchen_ [Facebook page]. Available at: < https://www.facebook.com/profile.php?id=61560964268377 > [Accessed 12 August 2026].
+Masakaneng Soup Kitchen, 2026. _Masakaneng Soup Kitchen_ [Facebook page]. Available at: <https://www.facebook.com/profile.php?id=61560964268377> [Accessed 16 September 2026].
 
-W3Schools, 2026. _HTML Tutorial_. Available at: < https://www.w3schools.com/html/ > [Accessed 12 August 2026].
+W3Schools, 2026. _HTML Tutorial_. Available at: <https://www.w3schools.com/html/> [Accessed 16 September 2026].
+
+W3Schools, 2026. _CSS Tutorial_. Available at: <https://www.w3schools.com/css/> [Accessed 16 September 2026].
