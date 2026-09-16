@@ -244,3 +244,23 @@ form button:hover {
 form button:active {
   transform: scale(0.97);
 }
+/* ---------- 10. CONTACT INFO (Grid) ---------- */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.contact-info div {
+  background-color: #f4f9ff;
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+  border: 1px solid #d6e6f7;
+  box-shadow: 0 2px 5px rgba(30, 95, 168, 0.06);
+}
+
+.contact-info h2 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
