@@ -264,3 +264,49 @@ form button:active {
   font-size: 1.05rem;
   margin-bottom: 0.4rem;
 }
+/* ---------- 11. FOOTER ---------- */
+footer {
+  background-color: #1e5fa8;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0.3rem 0;
+  color: #ffffff;
+}
+/*  12. RESPONSIVE DESIGN  */
+
+/* Tablet And Mobile */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  section h1 {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-images {
+    grid-template-columns: 1fr;
+  }
+}
