@@ -156,3 +156,36 @@ ul li {
 ul li strong {
   color: #1e5fa8;
 }
+/* ---------- 8. BUTTONS & LINKS (Pseudo-classes) ---------- */
+.btn,
+section a {
+  display: inline-block;
+  background-color: #1e5fa8;
+  color: aliceblue;
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.6rem;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn:hover,
+section a:hover {
+  background-color: #164a80;
+}
+
+.btn:active,
+section a:active {
+  transform: scale(0.97);
+  background-color: #0f3559;
+}
+
+.btn:focus,
+section a:focus {
+  outline: 2px solid #1e5fa8;
+  outline-offset: 3px;
+}
