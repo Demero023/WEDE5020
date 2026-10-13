@@ -19,6 +19,12 @@ Masakaneng Soup Kitchen is a community-based organisation that provides meals to
 - Accept donations (food and funds)
 - Share upcoming events and community drives
 
+**KPIs:**
+
+- Increase volunteer sign-ups by 30% in 6 months
+- Grow monthly donations by 20%
+- Increase website traffic by 40%
+
 ---
 
 ## Key Features and Functionality
@@ -29,17 +35,17 @@ Masakaneng Soup Kitchen is a community-based organisation that provides meals to
 - Google Map integration
 - Gallery of community work
 - External CSS stylesheet (Part 2)
-- Responsive design for desktop and mobile (Part 2)
+- Responsive design for desktop, tablet and mobile (Part 2)
 
 ---
 
 ## Timeline and Milestones
 
-| Milestone                        | Date           |
-| -------------------------------- | -------------- |
-| Part 1 (Planning & HTML)         | August 2026    |
-| Part 2 (CSS & Responsive Design) | September 2026 |
-| Part 3 (JavaScript & SEO)        | October 2026   |
+| Milestone                        | Date                    |
+| -------------------------------- | ----------------------- |
+| Part 1 (Planning & HTML)         | August 2026             |
+| Part 2 (CSS & Responsive Design) | September 2026          |
+| Part 3 (JavaScript & SEO)        | October - November 2026 |
 
 ---
 
@@ -84,8 +90,10 @@ Masakaneng Soup Kitchen is a community-based organisation that provides meals to
 
 ## References
 
-Masakaneng Soup Kitchen, 2026. _Masakaneng Soup Kitchen_ [Facebook page]. Available at: <https://www.facebook.com/profile.php?id=61560964268377> [Accessed 16 September 2026].
+Masakaneng Soup Kitchen, 2026. _Masakaneng Soup Kitchen_ [Facebook page]. Available at: <https://www.facebook.com/profile.php?id=61560964268377> [Accessed 12 August 2026].
 
-W3Schools, 2026. _HTML Tutorial_. Available at: <https://www.w3schools.com/html/> [Accessed 16 September 2026].
+W3Schools, 2026. _HTML Tutorial_. Available at: <https://www.w3schools.com/html/> [Accessed 12 August 2026].
 
 W3Schools, 2026. _CSS Tutorial_. Available at: <https://www.w3schools.com/css/> [Accessed 16 September 2026].
+
+GitHub Docs, 2026. _Getting started with GitHub Pages_. Available at: <https://docs.github.com/en/pages> [Accessed 11 August 2026].
