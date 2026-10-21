@@ -33,8 +33,20 @@
     </section>
 
     <section>
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input
+          type="text"
+          id="serviceSearch"
+          placeholder="Search our services (e.g., food, clothes)..."
+        />
+      </div>
+
       <!-- Food Distribution -->
-      <div>
+      <div
+        class="service-item service-card"
+        data-name="food distribution meals"
+      >
         <h2>Food Distribution</h2>
         <p>
           We serve daily hot meals to vulnerable individuals and families. We
@@ -54,7 +66,7 @@
       </div>
 
       <!-- Sanitary Pad Donations -->
-      <div>
+      <div class="service-item service-card" data-name="sanitary pad donations">
         <h2>Sanitary Pad Donations</h2>
         <p>
           We collect and distribute sanitary pads to girls and women who cannot
@@ -69,15 +81,20 @@
         </ul>
         <img src="images/pads_donation_1.jpg" alt="Sanitary pad donations" />
         <img src="images/pads_donation_2.jpg" alt="Sanitary pad donations" />
-        A big thank you to Miss Limpopo Province JNR ‘25 FINALIST for her
-        generous donation of sanitary towels to Masakaneng Soup Kitchen! Your
-        kindness is helping us ensure that young girls in our community have
-        access to essential hygiene products. Together, we are making a
-        difference!
+        <p>
+          A big thank you to Miss Limpopo Province JNR ‘25 FINALIST for her
+          generous donation of sanitary towels to Masakaneng Soup Kitchen! Your
+          kindness is helping us ensure that young girls in our community have
+          access to essential hygiene products. Together, we are making a
+          difference!
+        </p>
       </div>
 
       <!-- Clothing & Shoe Donations -->
-      <div>
+      <div
+        class="service-item service-card"
+        data-name="clothing and shoe donations"
+      >
         <h2>Clothing & Shoe Donations</h2>
         <p>
           We accept gently used clothing and shoes and distribute them to
@@ -116,5 +133,6 @@
     <footer>
       <p>&copy; 2026 Masakaneng Soup Kitchen. All rights reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

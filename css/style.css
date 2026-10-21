@@ -310,3 +310,35 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+/* ---------- 13. SEARCH BAR ---------- */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#serviceSearch {
+  width: 100%;
+  max-width: 500px; /* Keeps it from getting too wide on desktop */
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #2c3e50;
+  background-color: #ffffff;
+  border: 2px solid #b7d3ef;
+  border-radius: 50px; /* Gives it nice rounded edges */
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* What happens when the user clicks inside the search bar */
+#serviceSearch:focus {
+  border-color: #1e5fa8;
+  box-shadow: 0 4px 10px rgba(30, 95, 168, 0.2);
+}
+
+/* Placeholder text color */
+#serviceSearch::placeholder {
+  color: #8fa8c1;
+}
