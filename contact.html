@@ -58,8 +58,35 @@
         </p>
       </div>
     </section>
+    <!-- Contact Form Section -->
+    <section>
+      <h2>Send Us a Message</h2>
+      <form id="contactForm">
+        <label for="contactName">Full Name</label>
+        <input type="text" id="contactName" required />
+
+        <label for="contactEmail">Email Address</label>
+        <input type="email" id="contactEmail" required />
+
+        <label for="contactPhone">Phone Number (10 digits)</label>
+        <input type="tel" id="contactPhone" required />
+
+        <label for="contactMessage">Your Message</label>
+        <textarea id="contactMessage" rows="4" required></textarea>
+
+        <button type="submit">Send Email</button>
+      </form>
+
+      <!-- Div to show validation errors or success -->
+      <div
+        id="contactError"
+        class="form-result error"
+        style="display: none"
+      ></div>
+    </section>
     <footer>
       <p>&copy; 2026 Masakaneng Soup Kitchen. All rights reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

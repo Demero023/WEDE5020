@@ -89,3 +89,86 @@ if (enquiryForm && enquiryResult) {
     enquiryForm.reset();
   });
 }
+
+// --- CONTACT FORM VALIDATION ---
+const contactForm = document.getElementById("contactForm");
+const contactError = document.getElementById("contactError");
+
+if (contactForm && contactError) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop normal submission
+
+    // Get the values
+    const name = document.getElementById("contactName").value;
+    const email = document.getElementById("contactEmail").value;
+    const phone = document.getElementById("contactPhone").value;
+    const message = document.getElementById("contactMessage").value;
+
+    // Hide error by default
+    contactError.style.display = "none";
+    contactError.innerHTML = "";
+
+    // Validation 1: Check if phone is exactly 10 digits
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
+      contactError.style.display = "block";
+      contactError.innerHTML =
+        "Error: Please enter a valid 10-digit phone number (e.g., 0821234567).";
+      return; // Stop the code here if phone is wrong
+    }
+
+    // Validation 2: Check if message is long enough (at least 10 characters)
+    if (message.length < 10) {
+      contactError.style.display = "block";
+      contactError.innerHTML =
+        "Error: Your message is too short. Please write at least 10 characters.";
+      return;
+    }
+
+    // If all validation passes, create a mailto link
+    const emailTo = "info@masakaneng.org"; // The organization's email
+    const subject = "Website Contact from " + name;
+    const body =
+      "Name: " +
+      name +
+      "%0D%0A" +
+      "Email: " +
+      email +
+      "%0D%0A" +
+      "Phone: " +
+      phone +
+      "%0D%0A%0D%0A" +
+      "Message:" +
+      "%0D%0A" +
+      message;
+
+    // Open the user's email app
+    window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
+
+    // Show success and reset form
+    contactError.style.display = "block";
+    contactError.className = "form-result success";
+    contactError.innerHTML = "Opening your email app to send the message...";
+    contactForm.reset();
+  });
+}
+
+// --- ACCORDION FUNCTIONALITY ---
+const accordionButtons = document.querySelectorAll(".accordion-btn");
+
+if (accordionButtons.length > 0) {
+  accordionButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Toggle the 'active' class on the content next to the button
+      const content = this.nextElementSibling;
+      content.classList.toggle("active");
+
+      // Change button text to show +/- (optional)
+      if (content.classList.contains("active")) {
+        this.style.backgroundColor = "#e3f0fc";
+      } else {
+        this.style.backgroundColor = "#f7fbff";
+      }
+    });
+  });
+}
