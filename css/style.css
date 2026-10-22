@@ -342,3 +342,81 @@ footer p {
 #serviceSearch::placeholder {
   color: #8fa8c1;
 }
+/* ---------- 14. IMAGE LIGHTBOX ---------- */
+.lightbox {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 2000; /* On top of everything */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Dark background */
+  justify-content: center;
+  align-items: center;
+}
+
+/* When JS adds this class, it shows up */
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+/* The close (X) button */
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-lightbox:hover {
+  color: #ff2d95; /* Changes color on hover */
+}
+
+/* Smooth zoom animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ---------- 15. FORM RESULT MESSAGE ---------- */
+.form-result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: none; /* Hidden until JS reveals it */
+  text-align: center;
+}
+
+.form-result.success {
+  display: block;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-result.error {
+  display: block;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

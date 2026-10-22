@@ -29,7 +29,7 @@
 
     <!-- Enquiry Form -->
     <section>
-      <form action="#" method="POST">
+      <form id="enquiryForm">
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name" required />
 
@@ -37,17 +37,22 @@
         <input type="email" id="email" name="email" required />
 
         <label for="interest">I want to...</label>
-        <select id="interest" name="interest">
+        <select id="interest" name="interest" required>
           <option value="volunteer">Volunteer</option>
-          <option value="donate">Donate</option>
+          <option value="donate-food">Donate Food</option>
+          <option value="donate-funds">Donate Funds</option>
           <option value="sponsor">Sponsor</option>
         </select>
 
         <button type="submit">Send</button>
       </form>
+
+      <!-- This is where the JavaScript message will appear -->
+      <div id="enquiryResult" class="form-result"></div>
     </section>
     <footer>
       <p>&copy; 2026 Masakaneng Soup Kitchen. All rights reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
