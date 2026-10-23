@@ -43,7 +43,7 @@
     <section>
       <h2>Our History</h2>
       <p>
-        Masakaneng Soup Kitchen was founded in 2014 by Julius Malema and his
+        Masakaneng Soup Kitchen was founded in 2024 by Julius Malema and his
         group who saw a growing need for food security in the area.<br />
         What started as a small initiative serving meals has grown into a
         registered non-profit organisation serving over <br />
@@ -58,29 +58,35 @@
       </p>
     </section>
 
-    <!-- Mission & Vision -->
+    <!-- Tabs Section -->
     <section>
-      <h2>Our Mission</h2>
-      <p>
-        To alleviate hunger and restore dignity by providing nutritious meals to
-        vulnerable members of our community.
-      </p>
+      <h2>Learn More About Us</h2>
 
-      <h2>Our Vision</h2>
-      <p>A community where no one goes to bed hungry.</p>
+      <div class="tab-container">
+        <button class="tab-btn active" data-target="history">
+          Our History
+        </button>
+        <button class="tab-btn" data-target="mission">Our Mission</button>
+        <button class="tab-btn" data-target="vision">Our Vision</button>
+      </div>
 
-      <h2>Our Values</h2>
-      <ul>
-        <li>
-          <strong>Compassion:</strong> We serve with kindness and empathy.
-        </li>
-        <li>
-          <strong>Community:</strong> We believe in the power of collective
-          action.
-        </li>
-        <li><strong>Dignity:</strong> We respect every person we serve.</li>
-        <li><strong>Integrity:</strong> We are transparent and accountable.</li>
-      </ul>
+      <div id="history" class="tab-content active">
+        <p>
+          Masakaneng Soup Kitchen was founded in 2014 by Julius Malema and his
+          group who saw a growing need for food security in the area.
+        </p>
+      </div>
+
+      <div id="mission" class="tab-content">
+        <p>
+          To alleviate hunger and restore dignity by providing nutritious meals
+          to vulnerable members of our community.
+        </p>
+      </div>
+
+      <div id="vision" class="tab-content">
+        <p>A community where no one goes to bed hungry.</p>
+      </div>
     </section>
 
     <!-- Team Members -->

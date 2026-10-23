@@ -72,6 +72,23 @@ Masakaneng Soup Kitchen is a community-based organisation that provides meals to
 
 ---
 
+## Part 3 Details
+
+- Added JavaScript interactivity using a separate `js/script.js` file
+- Implemented a dynamic search filter on the Services page to sort/filter service cards
+- Created an interactive Image Lightbox that opens images in a larger overlay across all pages
+- Added JavaScript form validation on the Contact page (checks for a 10-digit phone number and minimum message length)
+- Implemented dynamic form calculations on the Enquiry page (generates specific responses based on user selection)
+- Added an interactive FAQ Accordion on the Services page
+- Added interactive Tabs on the About page (switching between History, Mission, and Vision)
+- Implemented a "Back to Top" button with smooth scrolling
+- Added SEO best practices: descriptive title tags, meta descriptions, keywords, and image alt text
+- Created a `robots.txt` file to instruct search engine crawlers
+- Created a `sitemap.xml` file to map out the website structure for search engines
+- Deployed the final website live using GitHub Pages
+
+---
+
 ## Sitemap
 
 ![Sitemap](images/sitemap.png)
@@ -85,15 +102,26 @@ Masakaneng Soup Kitchen is a community-based organisation that provides meals to
 - **16/09/2026:** Implemented responsive design with media queries for tablet and mobile.
 - **16/09/2026:** Made images responsive across all pages.
 - **16/09/2026:** Updated README with Part 2 details and changelog entries.
+- **21/10/2026:** Part 3 - Added JavaScript search filter, image lightbox, form validation, dynamic enquiry calculations, FAQ accordion, tabs, and back-to-top button.
+- **22/10/2026:** Part 3 - Added SEO meta tags, `robots.txt`,`sitemap.xml`, Tap Functionality.
+- **23/10/2026:** Deployed the final website to GitHub Pages.
 
 ---
 
 ## References
 
+GitHub Docs, 2026. _Getting started with GitHub Pages_. [online] Available at: <https://docs.github.com/en/pages> [Accessed 23 October 2026].
+
+Google, 2026. _Search Engine Optimization (SEO) Starter Guide_. [online] Available at: <https://developers.google.com/search/docs/fundamentals/seo-starter-guide> [Accessed 23 October 2026].
+
 Masakaneng Soup Kitchen, 2026. _Masakaneng Soup Kitchen_ [Facebook page]. Available at: <https://www.facebook.com/profile.php?id=61560964268377> [Accessed 12 August 2026].
 
-W3Schools, 2026. _HTML Tutorial_. Available at: <https://www.w3schools.com/html/> [Accessed 12 August 2026].
+MDN Web Docs, 2026. _JavaScript Guide_. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/JavaScript> [Accessed 23 October 2026].
+
+MDN Web Docs, 2026. _Client-side form validation_. [online] Available at: <https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation> [Accessed 23 October 2026].
 
 W3Schools, 2026. _CSS Tutorial_. Available at: <https://www.w3schools.com/css/> [Accessed 16 September 2026].
 
-GitHub Docs, 2026. _Getting started with GitHub Pages_. Available at: <https://docs.github.com/en/pages> [Accessed 11 August 2026].
+W3Schools, 2026. _HTML Tutorial_. Available at: <https://www.w3schools.com/html/> [Accessed 12 August 2026].
+
+W3Schools, 2026. _JavaScript Tutorial_. Available at: <https://www.w3schools.com/js/> [Accessed 23 October 2026].

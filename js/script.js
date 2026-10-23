@@ -93,66 +93,62 @@ if (enquiryForm && enquiryResult) {
   });
 }
 
-// --- CONTACT FORM VALIDATION ---
+//I have created a Formspree form with the endpoint
 const contactForm = document.getElementById("contactForm");
 const contactError = document.getElementById("contactError");
 
 if (contactForm && contactError) {
   contactForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // Stop normal submission
+    e.preventDefault();
 
-    // Get the values
     const name = document.getElementById("contactName").value;
     const email = document.getElementById("contactEmail").value;
     const phone = document.getElementById("contactPhone").value;
     const message = document.getElementById("contactMessage").value;
 
-    // Hide error by default
     contactError.style.display = "none";
-    contactError.innerHTML = "";
 
-    // Validation 1: Check if phone is exactly 10 digits
+    // Validation
     const phoneRegex = /^[0-9]{10}$/;
     if (!phoneRegex.test(phone)) {
       contactError.style.display = "block";
+      contactError.className = "form-result error";
       contactError.innerHTML =
-        "Error: Please enter a valid 10-digit phone number (e.g., 0821234567).";
-      return; // Stop the code here if phone is wrong
-    }
-
-    // Validation 2: Check if message is long enough (at least 10 characters)
-    if (message.length < 10) {
-      contactError.style.display = "block";
-      contactError.innerHTML =
-        "Error: Your message is too short. Please write at least 10 characters.";
+        "Error: Please enter a valid 10-digit phone number.";
       return;
     }
 
-    // If all validation passes, create a mailto link
-    const emailTo = "info@masakaneng.org"; // The organization's email
-    const subject = "Website Contact from " + name;
-    const body =
-      "Name: " +
-      name +
-      "%0D%0A" +
-      "Email: " +
-      email +
-      "%0D%0A" +
-      "Phone: " +
-      phone +
-      "%0D%0A%0D%0A" +
-      "Message:" +
-      "%0D%0A" +
-      message;
-
-    // Open the user's email app
-    window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
-
-    // Show success and reset form
+    // Show loading message
     contactError.style.display = "block";
     contactError.className = "form-result success";
-    contactError.innerHTML = "Opening your email app to send the message...";
-    contactForm.reset();
+    contactError.innerHTML = "Sending your message...";
+
+    // AJAX Fetch Request
+    fetch("https://formspree.io/f/mgaaeoak", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        phone: phone,
+        message: message,
+      }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          contactError.innerHTML =
+            "Message sent successfully! We will get back to you soon.";
+          contactForm.reset();
+        } else {
+          contactError.className = "form-result error";
+          contactError.innerHTML =
+            "Oops! There was a problem sending your message.";
+        }
+      })
+      .catch((error) => {
+        contactError.className = "form-result error";
+        contactError.innerHTML = "Network error. Please try again later.";
+      });
   });
 }
 
@@ -194,5 +190,25 @@ if (backToTopBtn) {
 
   backToTopBtn.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+// --- TABS FUNCTIONALITY ---
+const tabBtns = document.querySelectorAll(".tab-btn");
+const tabContents = document.querySelectorAll(".tab-content");
+
+if (tabBtns.length > 0) {
+  tabBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      // 1. Remove 'active' from all buttons and contents
+      tabBtns.forEach((b) => b.classList.remove("active"));
+      tabContents.forEach((c) => c.classList.remove("active"));
+
+      // 2. Add 'active' to the clicked button
+      this.classList.add("active");
+
+      // 3. Find the matching content div and show it
+      const targetId = this.getAttribute("data-target");
+      document.getElementById(targetId).classList.add("active");
+    });
   });
 }
