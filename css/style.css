@@ -461,3 +461,22 @@ footer p {
   max-height: 200px; /* Adjust based on content */
   padding: 15px;
 }
+
+#backToTop {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #1e5fa8;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#backToTop:hover {
+  background-color: #164a80;
+}

@@ -29,12 +29,15 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const closeLightbox = document.querySelector(".close-lightbox");
 
-// 1. Get all images inside the services list (or anywhere you want)
-const galleryImages = document.querySelectorAll(".service-item img");
+// 1. Get ALL images on the page (excluding the logo and the lightbox image itself)
+const galleryImages = document.querySelectorAll("main img, section img");
 
 if (lightbox && lightboxImg) {
   // 2. Loop through each image and add a click event
   galleryImages.forEach((img) => {
+    // Don't make the logo clickable
+    if (img.src.includes("logo.jpg")) return;
+
     img.style.cursor = "pointer"; // Show a pointer cursor on hover
 
     img.addEventListener("click", function () {
@@ -170,5 +173,26 @@ if (accordionButtons.length > 0) {
         this.style.backgroundColor = "#f7fbff";
       }
     });
+  });
+}
+
+// --- BACK TO TOP BUTTON ---
+const backToTopBtn = document.getElementById("backToTop");
+
+if (backToTopBtn) {
+  window.onscroll = function () {
+    // Show button after scrolling down 300px
+    if (
+      document.body.scrollTop > 300 ||
+      document.documentElement.scrollTop > 300
+    ) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
